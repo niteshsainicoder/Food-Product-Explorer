@@ -10,7 +10,7 @@ interface itemfile {
 }
 export default function Item({ image, foodname, category, nutrition, ingredients }: itemfile) {
   return (
-    <div className="w-[300px] hover:scale-105 transition duration-300   bg-violet-100 border flex flex-col gap-5  rounded-md p-2 h-[400px]">
+    <div className="w-[300px] hover:scale-[1.02] transform-gpu transition duration-300   bg-violet-100 border flex flex-col gap-5  rounded-md p-2 h-[400px]">
 
       <div className='relative border rounded-sm overflow-hidden bg-slate-50 w-full h-[250px]'>
         <Image src={image} alt={'nothing'} className='mix-blend-multiply' fill />
