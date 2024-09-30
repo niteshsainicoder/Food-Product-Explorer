@@ -58,7 +58,8 @@ function Product() {
 
     useEffect(() => {
         setdata(dummydata)
-    }, [dummydata])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
 
 
 
