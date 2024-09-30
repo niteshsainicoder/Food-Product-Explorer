@@ -1,7 +1,6 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import Item from './Item'
-import { log } from 'console'
 interface itemfile {
     image: string
     foodname: string
@@ -59,7 +58,7 @@ function Product() {
 
     useEffect(() => {
         setdata(dummydata)
-    }, [])
+    }, [dummydata])
 
 
 
@@ -67,6 +66,7 @@ function Product() {
         runfilter();
         console.log(filter, 'filter');
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [data, filter])
     return (
         <div id='products' className='w-full h-full flex justify-center flex-col gap-16 bg-zinc-100 items-center py-11'>
