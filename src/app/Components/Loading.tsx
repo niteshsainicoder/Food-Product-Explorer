@@ -12,7 +12,7 @@ function PageLoading() {
   }, [])
 
   return (
-    <div onClick={() => setloading(!loading)} className={`absolute ${loading ? 'translate-y-0' : '-translate-y-full'} ease-linear duration-500 gpu w-screen h-screen text-center flex items-center justify-center bg-gradient-to-b from-zinc-500 to-neutral-600  z-50 `}>
+    <div onClick={() => setloading(!loading)} className={`absolute ${loading ? 'translate-y-0 sticky top-0 ' : '-translate-y-full'} ease-linear duration-500 gpu w-screen h-screen text-center flex items-center justify-center bg-gradient-to-b from-zinc-500 to-neutral-600  z-50 `}>
       <h1 className={`text-6xl font-bold before:absolute  before:rotate-180 
       before:h-1 ${increasebar ? 'before:w-[450px]' : ' before:w-0'}  before:transition-all before:duration-700 before:top-[calc(50%+45px)] before:rounded-md    ease-in-out before:bg-neutral-700 before:shadow-md  before:shadow-white  flex text-neutral-700 antialiased`}> Food Explorer
 
